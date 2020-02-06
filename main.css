@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.img{
+    margin: 20px;
+    width: 80px;
+    margin-left: 40px;
+    margin-right: 290px;
+}
+.img img{
+    width: 100%;
+}
+.change{
+    display: flex;
+}
+.change input{
+    width: 250px;
+    padding: 10px;
+}
+.circle{
+    padding: 15px;
+}
+.circle img{
+    width: 15px;
+}
+.list a{
+     font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat'; 
+}
+.write p, .write h4{
+    width: 80%;
+    margin: auto;
+    /* margin-left: 60px; */
+    /* margin-top: 30px; */
+    line-height: 2.0;
+}
+.write .fourthp{
+    margin-top:50px ;
+}
+.write p{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+}
+.write h4{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Montserrat';
+}
+.information{
+    padding: 50px;
+    background-image: url(./images/Path\ 8219.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+.starter{
+    display: flex;
+}
+.line{
+    width: 600px;
+}
+.short h5{
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    line-height: 0.5;
+    margin-left: 33px ;
+}
+.short span{
+    width: 25px;
+    height: 2px;
+    border: 1px solid #FFFFFF;
+    display:block;
+    margin-left: 33px;
+}
+.line p{
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 2.0;
+    color: white;
+    margin-left: 33px;
+    margin-top: 15px;
+    font-family: 'Montserrat' ;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+  width: 70px;
+  margin-left: 33px;
+}
+.toghether{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    /* margin-right: 70px; */
+}
+.company{
+    width: 200px;
+}
+.company h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family:'Montserrat' ;
+    margin-bottom: 20px;
+    color:#FFFFFF
+}
+.product h5{
+    font-size: 18px;
+    font-weight: lighter;
+    font-family:'Montserrat' ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.company p, .product p{
+    font-family: 'Montserrat';
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+footer{
+    font-family: 'Montserrat';
+    font-size: 10px;
+    margin-left: 33px;
+    color: #FFFFFF;
+}
+@media screen and (max-width: 600px){
+    .img{
+        margin: 0;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    .starter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 140px;
+    }
+    .line{
+        width: 0;
+    }
+    .short h5, .short span, .line p, .icons, footer{
+        margin-left: 0;
+    }
+    .toghether{
+        display: grid;
+        justify-items: flex-start;
+        flex-grow: initial;
+    }
+}
